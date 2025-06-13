@@ -95,7 +95,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
   ) => {
     setIsLoading(true);
     try {
-      const response = await fetch(".25.50.145/api/auth/register", {
+      const response = await fetch("https://api-agriscan.gutechdeveloper.site/api/auth/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
