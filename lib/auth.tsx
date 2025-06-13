@@ -54,7 +54,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
   const login = async (userName: string, password: string) => {
     setIsLoading(true);
     try {
-      const response = await fetch("https://3.25.50.145/api/auth/login", {
+      const response = await fetch("https://api-agriscan.gutechdeveloper.site/api/auth/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -120,7 +120,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
   };
 
   const logout = () => {
-    fetch("https://3.25.50.145/api/auth/logout", {
+    fetch("https://api-agriscan.gutechdeveloper.site/api/auth/logout", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -141,7 +141,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
   const forgotPassword = async (email: string) => {
     try {
       const response = await fetch(
-        "https://3.25.50.145/api/auth/forgot-password",
+        "https://api-agriscan.gutechdeveloper.site/api/auth/forgot-password",
         {
           method: "POST",
           headers: {
@@ -169,7 +169,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
   const resetPassword = async (token: string, password: string) => {
     try {
       const response = await fetch(
-        "https://3.25.50.145/api/auth/reset-password",
+        "https://api-agriscan.gutechdeveloper.site/api/auth/reset-password",
         {
           method: "POST",
           headers: {
