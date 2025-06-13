@@ -167,7 +167,7 @@ export default function HomePage() {
                   className="text-emerald-600 hover:text-emerald-700 font-bold flex items-center px-4 py-2 rounded-xl hover:bg-emerald-50 transition-all duration-300 border-2 border-transparent hover:border-emerald-200 group"
                 >
                   <LogIn className="w-4 h-4 mr-2 group-hover:scale-110 transition-transform" />
-                  Login
+                  <p className="hidden md:block">Login</p>
                 </Link>
 
                 <Link
@@ -175,7 +175,7 @@ export default function HomePage() {
                   className="bg-white text-emerald-600 border-2 border-emerald-300 hover:border-emerald-400 hover:bg-emerald-50 shadow-md hover:shadow-lg transition-all duration-300 px-4 py-2 rounded-xl font-bold flex items-center group"
                 >
                   <UserPlus className="w-4 h-4 mr-2 group-hover:scale-110 transition-transform" />
-                  Register
+                  <p className="hidden md:block">Register</p>
                 </Link>
               </div>
             ) : (
