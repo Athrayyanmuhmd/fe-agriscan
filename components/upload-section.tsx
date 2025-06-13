@@ -35,7 +35,7 @@ export default function UploadSection({
   const streamRef = useRef<MediaStream | null>(null);
 
   // Get API URL from environment or fallback
-  const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://3.25.50.145";
+  const API_URL = process.env.NEXT_PUBLIC_API_URL || "https://3.25.50.145";
 
   // Handle drag events
   const handleDrag = useCallback((e: React.DragEvent) => {
