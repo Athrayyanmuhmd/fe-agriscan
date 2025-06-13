@@ -50,8 +50,8 @@ export default function RegisterPage() {
       await register(userName, email, password);
       showSuccess("Registrasi berhasil! Silakan login.");
       router.push("/login");
-    } catch (error) {
-      showError("Registrasi gagal. Silakan coba lagi.");
+    } catch (error:any) {
+      showError(error.message || "Terjadi kesalahan saat registrasi.");
     } finally {
       setIsLoading(false);
     }

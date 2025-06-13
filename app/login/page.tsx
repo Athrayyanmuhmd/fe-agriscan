@@ -47,8 +47,8 @@ export default function LoginPage() {
       await login(userName, password);
       showSuccess("Login berhasil!");
       router.push("/");
-    } catch (error) {
-      showError("Login gagal. Silakan coba lagi.");
+    } catch (error:any) {
+      showError(error.message || "Login gagal. Silakan coba lagi.");
     } finally {
       setIsLoading(false);
     }
